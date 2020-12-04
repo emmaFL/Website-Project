@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.home-bg {
+    background: url("images/icefield.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.about-bg {
+    background: url("images/icefall.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tech-bg {
+    background: url("images/icebridge.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bio-bg {
+    background: url("images/golden.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-bg {
+    background: url("images/puddle.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.travel-bg {
+    background: url("images/icelandglacier.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#welcome {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 85px;
+    text-align: center;
+    color: rgb(40, 33, 49);
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+#selfies {
+    text-align: right;
+}
+
+.head1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(40, 33, 49);
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+.head2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(40, 33, 49);
+    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+.para1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(40, 33, 49, 0.5);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.button1 {
+    background-color: rgb(211, 223, 241);
+    border: none;
+    font-size: 24px;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    padding: 14px 40px;
+    border-radius: 12px;
+    color: rgb(40, 33, 49);
+}
+
+.centrebuttons {
+    text-align: center;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.example {
+    float: left;
+}
+
+.map {
+    text-align: center;
+}
+
+#tripmap {
+    text-align: center;
+}
+
+
+a.button {
+    background-color: rgb(211, 223, 241);
+    border: solid;
+    border-color: rgb(40, 33, 49);
+    font-size: 24px;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    padding: 14px 40px;
+    border-radius: 12px;
+    color: rgb(40, 33, 49);
+    text-decoration: none;
+}
+
+a.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 10%;
+}
+
+  /* Make the image responsive */
+.container img {
+    width: 100%;
+    height: auto;
+    border: solid;
+    border-color: rgb(40, 33, 49);
+}
+
+  /* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(40, 33, 49);
+    color: white;
+    font-size: 16px;
+    font-family: 'Major Mono Display', monospace;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    animation-name: fade-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from {
+        background-color: rgb(40, 33, 49);
+        font-size: 16px;
+
+    }
+    to {
+        background-color: rgb(40, 33, 49, 0.5);
+        font-size: 20px;
+
+    }
+}
+
+
+.flexbuttons {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgb(40, 33, 49);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(40, 33, 49);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: rgb(40, 33, 49);
+    }
+
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgb(85,85,85);
+}
+
+
+/* tech icons container*/
+
+.icons-and-text {
+    margin: 100px;
+    background-color: rgb(40, 33, 49, 0.5);
+    padding: 70px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 33.3333%;
+    gap: 50px;
+}
+
+#exp {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* align-items: center;
+    vertical-align: top; */
+}
+
+/* .techicons {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: column;
+    min-height: 50vh;
+    margin: 100px;
+    padding: 40px;
+    border-radius: 40px;
+    width: 33.3333%;
+} */
+
+.sidetext {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    min-height: 57vh;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* individual tech icon stuff */
+
+.techicons img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 70px;
+    background-color: rgb(255,255,255);
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* font-size: 16px;
+    border: none; */
+
+}
+
+
+.paragraph1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(40, 33, 49, 0.5);
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.makemecenter {
+    text-align: center;
+}
+
+
+.contactsites {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(40, 33, 49, 0.5);
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.contactpics img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 70px;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    width: 20%;
+    height: auto;
+}
+
+
+.travelpic {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(40, 33, 49, 0.5);
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.travelpic img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    height: auto;
+    width: 70%;
+    
+}
+
+#trin {
+    width:40%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav thing (dropdown next to home button) */
+
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+
+.back-columns {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
+
+.what-back {
+    float: left;
+    background-color: rgb(40, 33, 49, 0.5);
+    margin: 80px;
+    padding: 40px;
+    border-radius: 40px;
+
+
+}
+
+.when-back {
+    float: right;
+    background-color: rgb(40, 33, 49, 0.5);
+    margin: 80px;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+
+
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutpara {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(40, 33, 49, 0.5);
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#centreme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
